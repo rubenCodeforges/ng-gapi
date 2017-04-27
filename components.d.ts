@@ -1,1 +1,1 @@
-export * from './lib/googleApi/GoogleApi';
+export * from './src/googleApi/GoogleApi';

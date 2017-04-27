@@ -1,1 +1,1 @@
-exports.GoogleApi = require('./lib/googleApi/GoogleApi').GoogleApi;
+exports.GoogleApi = require('./src/googleApi/GoogleApi').GoogleApi;
