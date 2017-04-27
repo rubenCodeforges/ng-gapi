@@ -7,7 +7,9 @@
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": true,
-    "outDir": "../src",
     "declaration": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
