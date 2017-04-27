@@ -2,7 +2,7 @@ import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
 
 @Injectable()
-export class GoogleApi {
+export class GoogleApiService {
     private readonly gapiUrl: string = 'https://apis.google.com/js/platform.js';
     private isLoaded: boolean = false;
 

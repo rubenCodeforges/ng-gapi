@@ -1,1 +1,1 @@
-export * from './GoogleApiModule';
+export * from './';

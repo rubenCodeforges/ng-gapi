@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
-import {GoogleApi} from "./GoogleApi";
+import {GoogleApiService} from "./GoogleApiService";
 import {GoogleApiConfig} from "./config/GoogleApiConfig";
 import GoogleAuth = gapi.auth2.GoogleAuth;
 
@@ -10,7 +10,7 @@ export class GoogleAuthService {
     private GoogleAuth: GoogleAuth = undefined;
     private config: GoogleApiConfig;
 
-    constructor(googleApi: GoogleApi, config: GoogleApiConfig) {
+    constructor(googleApi: GoogleApiService, config: GoogleApiConfig) {
         this.config = config;
 
         googleApi.onLoad(() => {
@@ -36,7 +36,7 @@ export class GoogleAuthService {
         });
     }
 
-    public static factory(googleApi: GoogleApi, config: GoogleApiConfig) {
+    public static factory(googleApi: GoogleApiService, config: GoogleApiConfig) {
         return new GoogleAuthService(googleApi, config)
     }
 
