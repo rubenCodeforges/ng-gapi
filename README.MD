@@ -4,7 +4,7 @@ This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
 in a Angular 2+ project.
 
-####Installation
+#### Installation
 
 ```js
 npm install ng-gapi
