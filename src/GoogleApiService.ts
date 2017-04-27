@@ -1,12 +1,19 @@
 import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
+import {GoogleApiConfig} from "./config/GoogleApiConfig";
 
 @Injectable()
 export class GoogleApiService {
     private readonly gapiUrl: string = 'https://apis.google.com/js/platform.js';
     private isLoaded: boolean = false;
+    private config: GoogleApiConfig;
 
-    constructor() {
+    public static factory(apiConfig: GoogleApiConfig) {
+        return new GoogleApiService(apiConfig);
+    }
+
+    constructor(config: GoogleApiConfig) {
+        this.config = config;
         this.loadGapi();
     }
 
