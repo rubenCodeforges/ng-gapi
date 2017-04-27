@@ -1,0 +1,50 @@
+{
+  "name": "ng-gapi",
+  "version": "0.0.1",
+  "description": "Angular 2 Google api module",
+  "main": "components.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenCodeforges/angular2-google-api.git"
+  },
+  "keywords": [
+    "Angular2",
+    "GoogleApi",
+    "Gapi",
+    "gapi",
+    "google",
+    "api",
+    "angular",
+    "2",
+    "ng2",
+    "gapi",
+    "ng-gapi"
+  ],
+  "author": "Ruben M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubenCodeforges/angular2-google-api/issues"
+  },
+  "homepage": "https://github.com/rubenCodeforges/angular2-google-api#readme",
+  "devDependencies": {
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "angular-in-memory-web-api": "~0.3.0",
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.8.4"
+  }
+}
