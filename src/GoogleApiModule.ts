@@ -5,7 +5,7 @@ import {GoogleApiConfig} from "./config/GoogleApiConfig";
 
 @NgModule()
 export class GoogleApiModule {
-    static forRoot(apiConfig: GoogleApiConfig): ModuleWithProviders {
+    static setConfig(apiConfig: GoogleApiConfig): ModuleWithProviders {
         return {
             ngModule: GoogleApiModule,
             providers: [
