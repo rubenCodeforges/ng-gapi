@@ -10,13 +10,9 @@ export class GoogleApiModule {
         return {
             ngModule: GoogleApiModule,
             providers: [
-                GoogleApiService,
                 {
                     provide: GoogleApiService,
-                    useFactory: GoogleApiService.factory,
-                    deps: [
-                        apiConfig
-                    ]
+                    useFactory: () => GoogleApiService.factory(apiConfig),
                 },
                 {
                     provide: GoogleAuthService,

@@ -1,9 +1,9 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.36",
+  "version": "0.0.39",
   "description": "Angular 2 Google api module",
-  "main": "components.js",
-  "typings": "lib/index",
+  "main": "./lib/index.js",
+  "typings": "./lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,16 +30,14 @@
     "url": "https://github.com/rubenCodeforges/angular2-google-api/issues"
   },
   "homepage": "https://github.com/rubenCodeforges/angular2-google-api#readme",
-  "devDependencies": {
-    "typescript": "^2.2.2",
+  "dependencies": {
     "@types/gapi": "0.0.31",
     "@types/gapi.auth2": "0.0.35"
   },
-  "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "rxjs": "^5.3.0"
+  "devDependencies": {
+    "@angular/core": "^4.1.1",
+    "rxjs": "^5.3.1",
+    "typescript": "^2.2.2",
+    "zone.js": "^0.8.10"
   }
 }

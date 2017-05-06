@@ -1,6 +1,6 @@
 import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
-import {GoogleApiConfig} from "./config/GoogleApiConfig";
+import {GoogleApiConfig, GapiInitConfigs} from "./config/GoogleApiConfig";
 
 @Injectable()
 export class GoogleApiService {
@@ -8,12 +8,12 @@ export class GoogleApiService {
     private isLoaded: boolean = false;
     private config: GoogleApiConfig;
 
-    public static factory(apiConfig: GoogleApiConfig) {
-        return new GoogleApiService(apiConfig);
+    public static factory(configs: GapiInitConfigs) {
+        return new GoogleApiService(configs);
     }
 
-    constructor(config: GoogleApiConfig) {
-        this.config = config;
+    constructor(config: GapiInitConfigs) {
+        this.config = new GoogleApiConfig(config);
         this.loadGapi();
     }
 
@@ -25,8 +25,12 @@ export class GoogleApiService {
         this.loadGapi().subscribe(callback);
     }
 
+    public getConfig(): GoogleApiConfig {
+        return this.config;
+    }
+
     private loadGapi(): Observable<void> {
-        return Observable.create((observer) => {
+        return Observable.create((observer: any) => {
             let node = document.createElement('script');
             node.src = this.gapiUrl;
             node.type = 'text/javascript';
