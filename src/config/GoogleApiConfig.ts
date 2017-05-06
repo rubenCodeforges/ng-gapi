@@ -1,21 +1,25 @@
-import {GapiAuthInitProperties} from "./GapiAuthInitProperties";
-
 export class GoogleApiConfig {
     protected CLIENT_ID: string;
     protected DISCOVERY_DOCS: string[];
     protected SCOPE: string;
 
-    constructor(CLIENT_ID: string, DISCOVERY_DOCS: string[], SCOPE: string) {
-        this.CLIENT_ID = CLIENT_ID;
-        this.DISCOVERY_DOCS = DISCOVERY_DOCS;
-        this.SCOPE = SCOPE;
+    constructor(configs: GapiInitConfigs) {
+        this.CLIENT_ID = configs.clientId;
+        this.DISCOVERY_DOCS = configs.discoveryDocs;
+        this.SCOPE = configs.scope;
     }
 
-    public getAuthConfig(): GapiAuthInitProperties {
+    public getConfigs(): GapiInitConfigs {
         return {
-            client_id: this.CLIENT_ID,
+            clientId: this.CLIENT_ID,
             discoveryDocs: this.DISCOVERY_DOCS,
             scope: this.SCOPE
         }
     }
+}
+
+export interface GapiInitConfigs {
+    clientId: string,
+    discoveryDocs: string[],
+    scope: string
 }

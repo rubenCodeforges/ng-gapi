@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: "./src/googleApi/GoogleApiModule.ts",
+    entry: "./src/GoogleApiModule.ts",
     output: {
         filename: "bundle.js"
     },
