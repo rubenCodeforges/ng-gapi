@@ -116,3 +116,10 @@ Configure them according your google app configurations and resource scope.
 - The discoveryDoc is in the resource description, here an example for
  [Reporting API v4](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/)
 - The scope is also in the documentation of the specific API , example for [Reporting API v4](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet#authorization)
+
+#### Examples 
+
+The examples can be used as modules , you need a basic Angular2 project , then add the example module to your projects folder
+and import the exampleModule in your AppModule
+
+- ng-gapi [Reporting API v4 example](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples/gapiReporting)
