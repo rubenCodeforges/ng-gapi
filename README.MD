@@ -19,9 +19,11 @@ and set the configuration
     imports: [
         ...
         GoogleApiModule.setConfig(
-            new GoogleApiConfig(
-                CLIENT_ID, DISCOVERY_DOCS, SCOPE
-            )
+           {
+               clientId: "your client id",
+               discoveryDocs: ["url to discovery docs", "another url"],
+               scope: "space separated scopes"
+           }
         ),
         ...
     ]
@@ -98,47 +100,19 @@ auth popup.
 
 #### Configurations
 The GoogleApiConfig class provides the required configuration for the Api
-There are 2 ways of providing configs.
 
-1. Default configuration is easy to use. The GoogleApiModule has a static method which sets the configs. 
-As shown in the example you simply provide a new instance of the `GoogleApiConfig` class. This class accepts 3 parameters
+Configuration is easy to use. The GoogleApiModule has a static method which sets the configs. 
+As shown in the example you simply provide a configuration object of type `GapiInitConfigs`.
 ```typescript
-new GoogleApiConfig(
-    CLIENT_ID, DISCOVERY_DOCS, SCOPE
-)
+ {
+   clientId: "your client id",
+   discoveryDocs: ["url to discovery docs", "another url"],
+   scope: "space separated scopes"
+}
 ```
 Configure them according your google app configurations and resource scope.
 
-2. In case you need to customize your configs you extend from the base `GoogleApiConfig` class
-Example: 
-```typescript
-export class GapiConfig extends GoogleApiConfig{
-    private static readonly CLIENT_ID: string = "your client id from google api";
-    private static readonly DISCOVERY_DOCS: string[] = [
-        "https://www.googleapis.com/discovery/v1/apis/tasks/v1/rest"
-    ];
-    private static readonly SCOPE: string = [
-        'https://www.googleapis.com/auth/tasks',
-        'https://www.googleapis.com/auth/tasks.readonly'
-    ].join(" ");
-
-    constructor(){
-        super(GapiConfig.CLIENT_ID, GapiConfig.DISCOVERY_DOCS, GapiConfig.SCOPE);
-    }
-}
-```
-As you can see those 3 configs are still provided to the super class constructor.
-Then in Module imports
-```typescript
-@NgModule({
-    imports: [
-        ...
-        GoogleApiModule.setConfig(
-            new GapiConfig()
-        ),
-        ...
-    ]
-})
-export MyModule {}
-```
-As you can see you dont need now to provide the configs inside the module import, instead you just provide the instance of the class
+- To get the clientId see in your [developer console](https://console.developers.google.com/apis/credentials)
+- The discoveryDoc is in the resource description, here an example for
+ [Reporting API v4](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/)
+- The scope is also in the documentation of the specific API , example for [Reporting API v4](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet#authorization)
