@@ -1,1 +1,0 @@
-exports.GoogleApiModule = require('./src/index').GoogleApiModule;
