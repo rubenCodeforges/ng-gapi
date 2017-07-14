@@ -3,7 +3,6 @@ import {Observable} from "rxjs";
 import {GoogleApiService} from "./GoogleApiService";
 import GoogleAuth = gapi.auth2.GoogleAuth;
 
-
 @Injectable()
 export class GoogleAuthService {
     private GoogleAuth: GoogleAuth = undefined;
@@ -31,9 +30,4 @@ export class GoogleAuthService {
             });
         });
     }
-
-    public static factory(googleApi: GoogleApiService) {
-        return new GoogleAuthService(googleApi)
-    }
-
 }

@@ -1,4 +1,3 @@
-import {GoogleApiService} from "./GoogleApiService";
 import {ModuleWithProviders, NgModule, Provider} from "@angular/core";
 import {GoogleAuthService} from "./GoogleAuthService";
 
@@ -9,13 +8,7 @@ export class GoogleApiModule {
             ngModule: GoogleApiModule,
             providers: [
                 gapiConfigProvider,
-                {
-                    provide: GoogleAuthService,
-                    useFactory: GoogleAuthService.factory,
-                    deps: [
-                        GoogleApiService
-                    ]
-                }
+                GoogleAuthService,
             ]
         }
     }
