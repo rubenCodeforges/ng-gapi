@@ -1,3 +1,9 @@
+export interface GapiInitConfigs {
+    clientId: string,
+    discoveryDocs: string[],
+    scope: string
+}
+
 export class GoogleApiConfig {
     protected CLIENT_ID: string;
     protected DISCOVERY_DOCS: string[];
@@ -16,10 +22,4 @@ export class GoogleApiConfig {
             scope: this.SCOPE
         }
     }
-}
-
-export interface GapiInitConfigs {
-    clientId: string,
-    discoveryDocs: string[],
-    scope: string
 }

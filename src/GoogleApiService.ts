@@ -1,6 +1,10 @@
 import {Observable} from "rxjs";
-import {Injectable} from "@angular/core";
-import {GoogleApiConfig, GapiInitConfigs} from "./config/GoogleApiConfig";
+import {Inject, Injectable, InjectionToken} from "@angular/core";
+import {GapiInitConfigs, GoogleApiConfig} from "./config/GoogleApiConfig";
+
+
+export let NG_GAPI_CONFIG: InjectionToken<GapiInitConfigs> =
+    new InjectionToken<GapiInitConfigs>("ng-gapi.config");
 
 @Injectable()
 export class GoogleApiService {
@@ -8,11 +12,7 @@ export class GoogleApiService {
     private isLoaded: boolean = false;
     private config: GoogleApiConfig;
 
-    public static factory(configs: GapiInitConfigs) {
-        return new GoogleApiService(configs);
-    }
-
-    constructor(config: GapiInitConfigs) {
+    constructor(@Inject(NG_GAPI_CONFIG) config: GapiInitConfigs) {
         this.config = new GoogleApiConfig(config);
         this.loadGapi();
     }

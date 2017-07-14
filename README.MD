@@ -1,8 +1,13 @@
-### Angular 2 Google api module (ng-gapi)
+### Angular 4 Google api module (ng-gapi)
 
 This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
-in a Angular 2+ project.
+in a Angular 4+ project.
+
+#### Latest change
+
+- Requires now Typescript version 2.3 or higher
+- Requires Angular4 or higher
 
 #### Installation
 
@@ -15,16 +20,22 @@ npm install ng-gapi
 To use the `ng-gapi` simply add `GoogleApiModule` to your module imports
 and set the configuration
 ```typescript
+let gapiConfig = {
+    clientId: "CLIENT_ID",
+    discoveryDocs: ["https://analyticsreporting.googleapis.com/$discovery/rest?version=v4"],
+    scope: [
+        "https://www.googleapis.com/auth/analytics.readonly",
+        "https://www.googleapis.com/auth/analytics"
+    ].join(" ")
+};
+
 @NgModule({
     imports: [
         ...
-        GoogleApiModule.setConfig(
-           {
-               clientId: "your client id",
-               discoveryDocs: ["url to discovery docs", "another url"],
-               scope: "space separated scopes"
-           }
-        ),
+          GoogleApiModule.forRoot({
+            provide: NG_GAPI_CONFIG,
+            useValue: gapiConfig
+          }),
         ...
     ]
 })
@@ -47,6 +58,8 @@ export class FooService {
     }
 }
 ```
+
+Also check the example folder with a google api reports module
 
 #### GoogleAuthService 
 The module has a GoogleAuth service which allows you to work with 
