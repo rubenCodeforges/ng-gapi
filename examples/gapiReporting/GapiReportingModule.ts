@@ -7,8 +7,9 @@ import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
 import {GapiReportingModel} from "./services/GapiReportingModel";
 import {NG_GAPI_CONFIG} from "../../src/GoogleApiService";
+import {ClientConfig} from "../../lib/config/GoogleApiConfig";
 
-let gapiConfig = {
+let gapiClientConfig: ClientConfig = {
     clientId: "CLIENT_ID",
     discoveryDocs: ["https://analyticsreporting.googleapis.com/$discovery/rest?version=v4"],
     scope: [
@@ -23,7 +24,7 @@ let gapiConfig = {
         FormsModule,
         GoogleApiModule.forRoot({
             provide: NG_GAPI_CONFIG,
-            useValue: gapiConfig
+            useValue: gapiClientConfig
         })
     ],
     declarations: [

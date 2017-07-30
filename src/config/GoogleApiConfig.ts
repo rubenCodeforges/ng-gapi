@@ -1,25 +1,25 @@
-export interface GapiInitConfigs {
-    clientId: string,
-    discoveryDocs: string[],
-    scope: string
+/**
+ * @description https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2clientconfig
+ */
+export interface ClientConfig {
+    clientId: string;
+    discoveryDocs: string[];
+    scope: string;
+    ux_mode?: string;
+    fetch_basic_profile?: boolean;
+    cookie_policy?: string;
+    hosted_domain?: string;
+    redirect_uri?: string;
 }
 
 export class GoogleApiConfig {
-    protected CLIENT_ID: string;
-    protected DISCOVERY_DOCS: string[];
-    protected SCOPE: string;
+    protected clientConfig: ClientConfig;
 
-    constructor(configs: GapiInitConfigs) {
-        this.CLIENT_ID = configs.clientId;
-        this.DISCOVERY_DOCS = configs.discoveryDocs;
-        this.SCOPE = configs.scope;
+    constructor(clientConfig: ClientConfig) {
+        this.clientConfig = clientConfig
     }
 
-    public getConfigs(): GapiInitConfigs {
-        return {
-            clientId: this.CLIENT_ID,
-            discoveryDocs: this.DISCOVERY_DOCS,
-            scope: this.SCOPE
-        }
+    public getClientConfig(): ClientConfig {
+        return this.clientConfig;
     }
 }

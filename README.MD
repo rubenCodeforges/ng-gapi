@@ -18,9 +18,25 @@ npm install ng-gapi
 #### Usage
 
 To use the `ng-gapi` simply add `GoogleApiModule` to your module imports
-and set the configuration
+and set the configuration.
+
+##### ClientConfig interface
+Bellow are all available parameters that can be provided in the `forRoot()` method.
 ```typescript
-let gapiConfig = {
+interface ClientConfig {
+    clientId: string;
+    discoveryDocs: string[];
+    scope: string;
+    ux_mode?: string;
+    fetch_basic_profile?: boolean;
+    cookie_policy?: string;
+    hosted_domain?: string;
+    redirect_uri?: string;
+}
+```
+##### Example:
+```typescript
+let gapiClientConfig: ClientConfig = {
     clientId: "CLIENT_ID",
     discoveryDocs: ["https://analyticsreporting.googleapis.com/$discovery/rest?version=v4"],
     scope: [
@@ -31,16 +47,18 @@ let gapiConfig = {
 
 @NgModule({
     imports: [
-        ...
+        //...
           GoogleApiModule.forRoot({
             provide: NG_GAPI_CONFIG,
-            useValue: gapiConfig
+            useValue: gapiClientConfig
           }),
-        ...
+        //...
     ]
 })
 export MyModule {}
 ```
+
+
 
 Now you will have Access to the GoogleApi service.
 The service has a a event method `onLoad(callback)`
