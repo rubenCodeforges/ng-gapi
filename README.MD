@@ -133,7 +133,7 @@ auth popup.
 The GoogleApiConfig class provides the required configuration for the Api
 
 Configuration is easy to use. The GoogleApiModule has a static method which sets the configs. 
-As shown in the example you simply provide a configuration object of type `GapiInitConfigs`.
+As shown in the example you simply provide a configuration object of type `ClientConfig`.
 ```typescript
  {
    clientId: "your client id",
