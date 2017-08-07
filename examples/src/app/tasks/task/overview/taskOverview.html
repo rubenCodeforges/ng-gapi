@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-block">
+        <div class="card-title-block">
+            <h3 class="title pull-left" translate>TASKS.OVERVIEW.TITLE</h3>
+            <a href="" class="btn btn-primary btn-sm rounded-s pull-right"
+               (click)="create(); $event.preventDefault()"
+               translate>
+                TASKS.OVERVIEW.TABLE.CREATE
+            </a>
+        </div>
+        <section class="section">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th translate>TASKS.OVERVIEW.TABLE.TITLE</th>
+                        <th translate>TASKS.OVERVIEW.TABLE.NOTES</th>
+                    </tr>
+                    </thead>
+                    <tbody [dragula]='"first-bag"' [dragulaModel]='getLoadedTasks()'>
+                    <tr *ngFor="let task of getLoadedTasks()" [ngClass]="isCompleted(task)">
+                        <td>{{task.title}}</td>
+                        <td>{{task.notes}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+</div>

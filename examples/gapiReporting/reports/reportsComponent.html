@@ -1,8 +1,0 @@
-<div *ngIf="isSignedIn()">
-    <h3>Your loged in</h3>
-    <p>Enter your analytics view id</p>
-    <input type="text" [(ngModel)]="viewId">
-    <button (click)="getReport()">Get report</button>
-</div>
-
-<button (click)="signIn()">Sign in</button>

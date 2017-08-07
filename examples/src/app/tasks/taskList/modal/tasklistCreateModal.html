@@ -1,0 +1,35 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <div class="modal-header">
+        <h4 class="modal-title" translate>
+            TASKLIST.FORM.CREATE
+        </h4>
+        <button type="button"
+                class="close"
+                aria-label="Close"
+                (click)="onClose()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="card card-block sameheight-item">
+            <div class="form-group required">
+                <label class="control-label" translate>TASKLIST.FORM.TASKLIST_TITLE</label>
+                <input type="text"
+                       name="tasklistTitle"
+                       [(ngModel)]="newTasklist.title"
+                       class="form-control boxed"
+                       required>
+                <span *ngIf="hasError(form.controls['tasklistTitle'])"
+                      class="has-error"
+                      translate>
+                    FORM.VALIDATION.FIELD.REQUIRED
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" translate>FORM.BUTTON.SUBMIT</button>
+        <button type="button" class="btn btn-secondary" (click)="onClose()" translate>FORM.BUTTON.CANCEL</button>
+    </div>
+</form>
