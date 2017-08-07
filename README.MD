@@ -153,4 +153,4 @@ Configure them according your google app configurations and resource scope.
 The examples can be used as modules , you need a basic Angular2 project , then add the example module to your projects folder
 and import the exampleModule in your AppModule
 
-- ng-gapi [Reporting API v4 example](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples/gapiReporting)
+- ng-gapi [Reporting API v4 example](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples)
