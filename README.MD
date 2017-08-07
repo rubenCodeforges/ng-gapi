@@ -15,6 +15,10 @@ in a Angular 4+ project.
 npm install ng-gapi
 ```
 
+####Examples 
+Example [project](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples)
+Demo [project](http://codeforges.com/google-tasks/)
+
 #### Usage
 
 To use the `ng-gapi` simply add `GoogleApiModule` to your module imports
