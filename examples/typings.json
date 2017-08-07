@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160914114559",
+    "jquery": "registry:dt/jquery#1.10.0+20160929162922",
+    "require": "registry:dt/require#2.1.20+20160316155526"
+  }
+}

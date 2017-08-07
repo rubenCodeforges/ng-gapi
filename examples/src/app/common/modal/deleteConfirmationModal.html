@@ -1,0 +1,24 @@
+<form>
+    <div class="modal-header alert-danger">
+        <h4 class="modal-title">
+            <i class="fa fa-warning"></i>
+            {{"MODAL.DELETE.HEADER" | translate}}
+        </h4>
+        <button type="button"
+                class="close"
+                aria-label="Close"
+                (click)="onClose()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p translate>
+            MODAL.DELETE.TITLE
+        </p>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="onConfirmation()" translate>FORM.BUTTON.CONFIRM</button>
+        <button type="button" class="btn btn-secondary" (click)="onClose()" translate>FORM.BUTTON.CANCEL</button>
+    </div>
+</form>

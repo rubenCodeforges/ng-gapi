@@ -1,0 +1,18 @@
+@error-color: #FF4444;
+
+.form-control {
+  &.ng-invalid.ng-touched {
+    border-color: @error-color;
+  }
+}
+
+.form-group {
+  .has-error {
+    color: @error-color;
+  }
+  &.required {
+    label:after {
+      content: "*";
+    }
+  }
+}

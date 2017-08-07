@@ -1,0 +1,17 @@
+<div class="main-wrapper">
+    <div class="app" id="app" *ngIf="isSignedIn(); else login">
+        <toolbar></toolbar>
+        <sidebar></sidebar>
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <article class="content dashboard-page">
+            <router-outlet></router-outlet>
+        </article>
+        <footer class="footer"></footer>
+    </div>
+
+    <ng-template #login>
+        <login-form></login-form>
+    </ng-template>
+</div>
