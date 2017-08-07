@@ -15,8 +15,9 @@ in a Angular 4+ project.
 npm install ng-gapi
 ```
 
-####Examples 
+#### Examples 
 Example [project](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples)
+
 Demo [project](http://codeforges.com/google-tasks/)
 
 #### Usage
