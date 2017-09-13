@@ -1,7 +1,5 @@
 # Google tasks App
 
-[Demo](http://codeforges.com/google-tasks/)
-
 [repo](https://github.com/rubenCodeforges/angular-google-tasks-test-waes)
 
 
