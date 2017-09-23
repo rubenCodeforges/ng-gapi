@@ -15,10 +15,6 @@ in a Angular 4+ project.
 npm install ng-gapi
 ```
 
-[Example](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples)
-
-[Demo](http://codeforges.com/google-tasks/)
-
 #### Usage
 
 To use the `ng-gapi` simply add `GoogleApiModule` to your module imports
@@ -40,8 +36,8 @@ interface ClientConfig {
 ```
 ##### Example:
 ```typescript
-let gapiClientConfig: ClientConfig = {
-    clientId: "CLIENT_ID",
+let gapiClientConfig: NgGapiClientConfig = {
+    client_id: "CLIENT_ID",
     discoveryDocs: ["https://analyticsreporting.googleapis.com/$discovery/rest?version=v4"],
     scope: [
         "https://www.googleapis.com/auth/analytics.readonly",
@@ -73,9 +69,9 @@ Usage example :
 ```typescript
 export class FooService {
     constructor(gapiService: GoogleApiService) {
-        gapiService.onLoad(()=> {
+        gapiService.onLoad().subscribe(()=> {
            // Here we can use gapi
-            
+           
         });
     }
 }
@@ -140,7 +136,7 @@ Configuration is easy to use. The GoogleApiModule has a static method which sets
 As shown in the example you simply provide a configuration object of type `ClientConfig`.
 ```typescript
  {
-   clientId: "your client id",
+   client_id: "your client id",
    discoveryDocs: ["url to discovery docs", "another url"],
    scope: "space separated scopes"
 }
