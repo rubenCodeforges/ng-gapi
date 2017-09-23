@@ -1,6 +1,6 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.42-1",
+  "version": "0.0.43",
   "description": "Angular 4 Google api module ng-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/rubenCodeforges/angular2-google-api#readme",
   "dependencies": {
-    "@types/gapi": "0.0.33",
-    "@types/gapi.auth2": "0.0.40"
+    "@types/gapi": "^0.0.35",
+    "@types/gapi.auth2": "^0.0.44"
   },
   "devDependencies": {
     "@angular/compiler": "^4.2.6",
