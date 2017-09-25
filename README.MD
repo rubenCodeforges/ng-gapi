@@ -161,10 +161,12 @@ In this section i would like to point your attention on some intresting projects
 
 - You like typescript ? 
 - You love Angular ?
-- You would like to have a quick solution for building you own APIs using knwon stacks ?
+- You would like to have a quick solution for building you own APIs using known stacks ?
 
 Then [NestJs](http://docs.nestjs.com/) is what you are looking for.
 
 What i can tell:
+
 Ive used some of the popular frameworks for backend, like Symfont(Php) and Spring(Java) and i see that Nest is utilizing the best approaches from both, even more, it will be very understandable for Angular developers.
+
 In other words , i support this project , please give it a try. 
