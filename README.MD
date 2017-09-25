@@ -156,12 +156,13 @@ and import the exampleModule in your AppModule
 - ng-gapi [Reporting API v4 example](https://github.com/rubenCodeforges/angular2-google-api/tree/master/examples)
 
 
-##### Promotion
+#### Promotion
 In this section i would like to point your attention on some intresting projects.
 
-You like typescript ? 
-You love Angular ?
-You would like to have a quick solution for building you own APIs using knwon stacks ?
+- You like typescript ? 
+- You love Angular ?
+- You would like to have a quick solution for building you own APIs using knwon stacks ?
+
 Then [NestJs](http://docs.nestjs.com/) is what you are looking for.
 
 What i can tell:
