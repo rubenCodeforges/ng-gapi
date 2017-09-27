@@ -1,7 +1,7 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.43",
-  "description": "Angular 4 Google api module ng-gapi",
+  "version": "0.0.44",
+  "description": "Angular 4+ Google api module ng-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rubenCodeforges/angular2-google-api.git"
+    "url": "git+https://github.com/rubenCodeforges/ng-gapi"
   },
   "keywords": [
     "Angular2",
@@ -28,9 +28,9 @@
   "author": "Ruben M",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rubenCodeforges/angular2-google-api/issues"
+    "url": "https://github.com/rubenCodeforges/ng-gapi/issues"
   },
-  "homepage": "https://github.com/rubenCodeforges/angular2-google-api#readme",
+  "homepage": "https://github.com/rubenCodeforges/ng-gapi#readme",
   "dependencies": {
     "@types/gapi": "^0.0.35",
     "@types/gapi.auth2": "^0.0.44"
