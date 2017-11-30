@@ -1,4 +1,4 @@
-import {Observable} from "rxjs";
+import {Observable} from "rxjs/Observable";
 import {Inject, Injectable, InjectionToken} from "@angular/core";
 import {GoogleApiConfig, NgGapiClientConfig} from "./config/GoogleApiConfig";
 import {Observer} from "rxjs/Observer";
