@@ -80,6 +80,15 @@ interface ClientConfig {
 
 ##### Example:
 ```typescript
+import {
+    GoogleApiModule, 
+    GoogleApiService, 
+    GoogleAuthService, 
+    NgGapiClientConfig, 
+    NG_GAPI_CONFIG,
+    GoogleApiConfig
+} from "ng-gapi";
+
 let gapiClientConfig: NgGapiClientConfig = {
     client_id: "CLIENT_ID",
     discoveryDocs: ["https://analyticsreporting.googleapis.com/$discovery/rest?version=v4"],
