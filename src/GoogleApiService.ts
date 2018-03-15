@@ -8,7 +8,7 @@ export let NG_GAPI_CONFIG: InjectionToken<NgGapiClientConfig> =
 
 @Injectable()
 export class GoogleApiService {
-    private readonly gapiUrl: string = 'https://apis.google.com/js/platform.js';
+    private readonly gapiUrl: string = 'https://apis.google.com/js/api.js';
     private config: GoogleApiConfig;
 
     constructor(@Inject(NG_GAPI_CONFIG) config: NgGapiClientConfig) {
