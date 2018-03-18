@@ -4,6 +4,8 @@ This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
 in a Angular 4+ project.
 
+P.S. New NG module is in development , Angular dynamic forms, you can explore it here https://github.com/rubenCodeforges/ng-dynamic-form 
+
 #### Latest change
 
 - Requires now Typescript version 2.3 or higher
