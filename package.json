@@ -1,6 +1,6 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.45",
+  "version": "0.0.50",
   "description": "Angular 4+ Google api module ng-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -14,6 +14,9 @@
   },
   "keywords": [
     "Angular2",
+    "Angular4",
+    "Angular5",
+    "Angular",
     "GoogleApi",
     "Gapi",
     "gapi",
@@ -21,7 +24,11 @@
     "api",
     "angular",
     "2",
+    "4",
+    "5",
     "ng2",
+    "ng4",
+    "ng5",
     "gapi",
     "ng-gapi"
   ],
