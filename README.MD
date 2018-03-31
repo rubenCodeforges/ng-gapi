@@ -21,7 +21,7 @@ npm install ng-gapi
 
 #### Usage
 
-[DEMO stackblitz](https://ng-gapi-example.stackblitz.io)
+[DEMO stackblitz](https://stackblitz.com/edit/ng-gapi-example)
 
 To use the `ng-gapi` simply add `GoogleApiModule` to your module imports
 and set the configuration.
