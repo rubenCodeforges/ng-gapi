@@ -6,7 +6,7 @@ in a Angular 4+ project.
 
 
 
-P.S. New NG module is in development , Angular dynamic forms, you can explore it here https://github.com/rubenCodeforges/ng-dynamic-form 
+P.S. New NG module is in development , Angular dynamic forms, you can explore it here https://github.com/rubenCodeforges/ng-forms 
 
 #### Latest change
 
