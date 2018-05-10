@@ -40,7 +40,8 @@
   "homepage": "https://github.com/rubenCodeforges/ng-gapi#readme",
   "dependencies": {
     "@types/gapi": "^0.0.35",
-    "@types/gapi.auth2": "^0.0.44"
+    "@types/gapi.auth2": "^0.0.44",
+    "rxjs-compat": "^6.1.0"
   },
   "devDependencies": {
     "@angular/compiler": "^4.4.6",
