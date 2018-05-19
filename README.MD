@@ -1,5 +1,7 @@
 ### Angular 4 Google api module (ng-gapi)
 
+##### telegram https://t.me/ngGapi
+
 This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
 in a Angular 4+ project.
