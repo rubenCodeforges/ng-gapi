@@ -187,6 +187,27 @@ Lets go step by step through the example
 auth popup. 
 5. The get token method is used for http request to google resource where a authentication is required.
 
+#### Batch requests
+
+From gapi docs https://developers.google.com/api-client-library/javascript/features/batch
+we should use `gapi.client.newBatch()`
+
+But in our case we have typings and OOP, so we can do this:
+
+```typescript
+export class FooService {
+    constructor(gapiService: GoogleApiService) {
+        gapiService.onLoad().subscribe(()=> {
+           const myBatch: HttpBatch = new HttpBatch();
+           myBatch.add(
+               // your request
+           );
+        });
+    }
+}
+
+```
+
 
 #### Configurations
 The GoogleApiConfig class provides the required configuration for the Api
