@@ -2,7 +2,7 @@ import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs/Observer";
 import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/mergeMap';
+import { mergeMap } from 'rxjs/operators';
 import {GoogleApiService} from "./GoogleApiService";
 import GoogleAuth = gapi.auth2.GoogleAuth;
 
@@ -18,7 +18,7 @@ export class GoogleAuthService {
 
     public getAuth(): Observable<GoogleAuth> {
         if (!this.GoogleAuth) {
-            return this.googleApi.onLoad().mergeMap(() => this.loadGapiAuth());
+            return this.googleApi.onLoad().pipe(mergeMap(function () { return _this.loadGapiAuth(); }));
         }
         return Observable.of(this.GoogleAuth);
     }
