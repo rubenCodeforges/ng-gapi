@@ -31,6 +31,8 @@ export class GoogleAuthService {
                   this.GoogleAuth = auth;
                   observer.next(auth);
                   observer.complete();
+                }).catch(err => {
+                    observer.error(err);
                 });
             });
         });
