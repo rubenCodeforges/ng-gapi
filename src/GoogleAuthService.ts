@@ -16,8 +16,8 @@ export class GoogleAuthService {
         });
     }
 
-    public getAuth(): Observable<GoogleAuth> {
-        if (!this.GoogleAuth) {
+    public getAuth(newInstance = false): Observable<GoogleAuth> {
+        if (!this.GoogleAuth || newInstance) {
             return this.googleApi.onLoad()
                 .pipe(mergeMap(() => this.loadGapiAuth()));
         }
