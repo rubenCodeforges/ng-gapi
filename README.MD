@@ -1,4 +1,4 @@
-### Angular 4 Google api module (ng-gapi)
+### Angular 6+ Google api module (ng-gapi)
 
 ##### telegram https://t.me/ngGapi
 
@@ -231,18 +231,6 @@ Configure them according your google app configurations and resource scope.
 - The scope is also in the documentation of the specific API , example for [Reporting API v4](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet#authorization)
 
 
-
 #### Promotion
-In this section i would like to point your attention on some intresting projects.
-
-- You like typescript ? 
-- You love Angular ?
-- You would like to have a quick solution for building you own APIs using known stacks ?
-
-Then [NestJs](http://docs.nestjs.com/) is what you are looking for.
-
-What i can tell:
-
-Ive used some of the popular frameworks for backend, like Symfony(Php) and Spring(Java) and i see that Nest is utilizing the best approaches from both, even more, it will be very understandable for Angular developers.
-
-In other words , i support this project , please give it a try. 
+We are providing Web Development and Consulting Services.
+[codeforges.com](https://codeforges.com)
