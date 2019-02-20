@@ -1,14 +1,10 @@
 ### Angular 6+ Google api module (ng-gapi)
 
-##### telegram https://t.me/ngGapi
-
 This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
 in a Angular 4+ project.
 
-
-
-P.S. New NG module is in development , Angular dynamic forms, you can explore it here https://github.com/rubenCodeforges/ng-forms 
+made by [codeforges](codeforges.com)
 
 #### Latest change
 
