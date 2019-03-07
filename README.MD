@@ -4,7 +4,7 @@ This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
 in a Angular 4+ project.
 
-made by [codeforges](codeforges.com)
+made by [codeforges](https://codeforges.com)
 
 #### Latest change
 
