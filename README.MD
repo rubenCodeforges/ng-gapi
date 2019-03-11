@@ -8,7 +8,7 @@ made by [codeforges](https://codeforges.com)
 
 ##### Latest News 
 
-We have started our work on our [video tutorials series](https://www.youtube.com/watch?v=nz6yFTyLbAQ&list=PLq1kZ5GbKd4qyDcK3IHGSi4FDAL6fRZeL), Angular + NestJs a full fledged application.
+We have started to work on our [video tutorials series](https://www.youtube.com/watch?v=nz6yFTyLbAQ&list=PLq1kZ5GbKd4qyDcK3IHGSi4FDAL6fRZeL), Angular + NestJs a full fledged application.
 
 
 #### Latest change
