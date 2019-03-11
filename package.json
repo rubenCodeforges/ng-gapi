@@ -1,7 +1,7 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.6",
-  "description": "Angular 4+ Google api module ng-gapi",
+  "version": "0.0.7",
+  "description": "Angular 7+ Google api module ng-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
@@ -16,6 +16,8 @@
     "Angular2",
     "Angular4",
     "Angular5",
+    "Angular6",
+    "Angular7",
     "Angular",
     "GoogleApi",
     "Gapi",
@@ -32,7 +34,7 @@
     "gapi",
     "ng-gapi"
   ],
-  "author": "Ruben M",
+  "author": "Ruben M <ruben@codeforges.com> (https://codeforges.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rubenCodeforges/ng-gapi/issues"
