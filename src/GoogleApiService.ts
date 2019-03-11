@@ -16,7 +16,7 @@ export class GoogleApiService {
         this.loadGapi().subscribe();
     }
 
-    public onLoad(): Observable<void> {
+    public onLoad(): Observable<boolean> {
         return this.loadGapi();
     }
 
@@ -24,8 +24,8 @@ export class GoogleApiService {
         return this.config;
     }
 
-    private loadGapi(): Observable<void> {
-        return Observable.create((observer: Observer<boolean>) => {
+    private loadGapi(): Observable<boolean> {
+        return new Observable((observer: Observer<boolean>) => {
             let node = document.createElement('script');
             node.src = this.gapiUrl;
             node.type = 'text/javascript';

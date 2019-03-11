@@ -25,15 +25,13 @@ export class GoogleAuthService {
     }
 
     private loadGapiAuth(): Observable<GoogleAuth> {
-        return Observable.create((observer: Observer<GoogleAuth>) => {
+        return new Observable((observer: Observer<GoogleAuth>) => {
             gapi.load('auth2', () => {
                 gapi.auth2.init(this.googleApi.getConfig().getClientConfig()).then((auth: GoogleAuth) => {
-                  this.GoogleAuth = auth;
-                  observer.next(auth);
-                  observer.complete();
-                }).catch(err => {
-                    observer.error(err);
-                });
+                    this.GoogleAuth = auth;
+                    observer.next(auth);
+                    observer.complete();
+                }).catch((err: any) => observer.error(err));
             });
         });
     }
