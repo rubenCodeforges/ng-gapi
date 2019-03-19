@@ -12,7 +12,7 @@ export class GoogleAuthService {
 
     constructor(private googleApi: GoogleApiService) {
         this.googleApi.onLoad().subscribe(() => {
-            this.loadGapiAuth();
+            this.loadGapiAuth().subscribe();
         });
     }
 
