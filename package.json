@@ -1,7 +1,7 @@
 {
   "name": "ng-gapi",
-  "version": "0.0.73",
-  "description": "Angular 7+ Google api module ng-gapi",
+  "version": "0.0.90",
+  "description": "Angular 9+ Google api module ng-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
@@ -41,21 +41,22 @@
   },
   "homepage": "https://github.com/rubenCodeforges/ng-gapi#readme",
   "dependencies": {
-    "@types/gapi": "^0.0.35",
-    "@types/gapi.auth2": "^0.0.44",
-    "rxjs-compat": "^6.1.0",
+    "@types/gapi": "^0.0.39",
+    "@types/gapi.auth2": "^0.0.51",
+    "rxjs-compat": "^6.5.4",
     "tslib": "^1.11.1"
   },
   "devDependencies": {
-    "@angular/compiler": "^4.4.6",
-    "@angular/compiler-cli": "^4.4.6",
-    "@angular/core": "^4.4.6",
-    "@angular/platform-server": "^4.4.6",
+    "@angular/compiler": "^9.1.0",
+    "@angular/compiler-cli": "^9.1.0",
+    "@angular/core": "^9.1.0",
+    "@angular/platform-server": "^9.1.0",
     "@angular/animations": "^9.1.0",
-    "@types/node": "7.0.10",
-    "rxjs": "^6.3.3",
-    "typescript": "^2.6.2",
-    "tslint": "~5.11.0",
-    "zone.js": "^0.8.18"
+    "@angular/common": "^9.1.0",
+    "@types/node": "^13.9.8",
+    "rxjs": "^6.5.4",
+    "typescript": "^3.8.3",
+    "tslint": "~6.1.0",
+    "zone.js": "^0.10.3"
   }
 }
