@@ -51,6 +51,7 @@
     "@angular/compiler-cli": "^4.4.6",
     "@angular/core": "^4.4.6",
     "@angular/platform-server": "^4.4.6",
+    "@angular/animations": "^9.1.0",
     "@types/node": "7.0.10",
     "rxjs": "^6.3.3",
     "typescript": "^2.6.2",
