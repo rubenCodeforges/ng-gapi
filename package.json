@@ -43,7 +43,8 @@
   "dependencies": {
     "@types/gapi": "^0.0.35",
     "@types/gapi.auth2": "^0.0.44",
-    "rxjs-compat": "^6.1.0"
+    "rxjs-compat": "^6.1.0",
+    "tslib": "^1.11.1"
   },
   "devDependencies": {
     "@angular/compiler": "^4.4.6",
