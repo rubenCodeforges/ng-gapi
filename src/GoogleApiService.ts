@@ -1,7 +1,6 @@
-import {Observable} from "rxjs/Observable";
 import {Inject, Injectable, InjectionToken} from "@angular/core";
 import {GoogleApiConfig, NgGapiClientConfig} from "./config/GoogleApiConfig";
-import {Observer} from "rxjs/Observer";
+import {Observable, Observer} from 'rxjs';
 
 export let NG_GAPI_CONFIG: InjectionToken<NgGapiClientConfig> =
     new InjectionToken<NgGapiClientConfig>("ng-gapi.config");

@@ -4,7 +4,7 @@ import {GoogleApiService} from "./GoogleApiService";
 
 @NgModule()
 export class GoogleApiModule {
-    static forRoot(gapiConfigProvider: Provider): ModuleWithProviders {
+    static forRoot(gapiConfigProvider: Provider): ModuleWithProviders<GoogleApiModule> {
         return {
             ngModule: GoogleApiModule,
             providers: [
