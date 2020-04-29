@@ -1,10 +1,8 @@
 import {Injectable} from "@angular/core";
 import {GoogleApiService} from "./GoogleApiService";
 import GoogleAuth = gapi.auth2.GoogleAuth;
+import {Observable, Observer, of} from 'rxjs';
 import {mergeMap} from 'rxjs/operators';
-import {of} from 'rxjs/internal/observable/of';
-import {Observable} from 'rxjs/Observable';
-import {Observer} from 'rxjs/Observer';
 
 @Injectable()
 export class GoogleAuthService {

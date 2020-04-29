@@ -43,7 +43,6 @@
   "dependencies": {
     "@types/gapi": "^0.0.39",
     "@types/gapi.auth2": "^0.0.51",
-    "rxjs-compat": "^6.5.4",
     "tslib": "^1.11.1"
   },
   "devDependencies": {
