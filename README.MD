@@ -1,8 +1,8 @@
-### Angular 6+ Google api module (ng-gapi)
+### Angular 9+ Google api module (ng-gapi)
 
 This module will add the google api to your project.
 It wraps the Gapi in to a service layer allowing to work with Gapi
-in a Angular 4+ project.
+in a Angular 9+ project.
 
 made by [codeforges](https://codeforges.com)
 
@@ -13,8 +13,8 @@ We have started to work on our [video tutorials series](https://www.youtube.com/
 
 #### Latest change
 
-- Requires now Typescript version 2.3 or higher
-- Requires Angular4 or higher
+- Requires now Typescript version 3.8.3 or higher
+- Requires Angular9 or higher
 
 #### Installation
 
