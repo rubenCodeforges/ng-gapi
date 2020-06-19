@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "es2015",
-    "target": "es5",
+    "module": "esnext",
+    "target": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "declaration": true,
