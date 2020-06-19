@@ -3,7 +3,9 @@
   "version": "0.0.93",
   "description": "Angular 9+ Google api module ng-gapi",
   "main": "./lib/index.js",
-  "files": ["lib/*"],
+  "files": [
+    "lib/*"
+  ],
   "typings": "./lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,6 +21,8 @@
     "Angular5",
     "Angular6",
     "Angular7",
+    "Angular8",
+    "Angular9",
     "Angular",
     "GoogleApi",
     "Gapi",
