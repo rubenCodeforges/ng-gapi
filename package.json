@@ -1,14 +1,20 @@
 {
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "ng-gapi",
   "version": "0.0.93",
   "description": "Angular 9+ Google api module ng-gapi",
-  "main": "./lib/index.js",
-  "files": [
-    "lib/*"
-  ],
-  "typings": "./lib/index.d.ts",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    },
+    "whitelistedNonPeerDependencies": [
+      "@types/gapi",
+      "@types/gapi.auth2",
+      "tslib"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ng-packagr -p package.json",
     "tsc": "ngc"
   },
   "repository": {
@@ -16,12 +22,6 @@
     "url": "git+https://github.com/rubenCodeforges/ng-gapi"
   },
   "keywords": [
-    "Angular2",
-    "Angular4",
-    "Angular5",
-    "Angular6",
-    "Angular7",
-    "Angular8",
     "Angular9",
     "Angular",
     "GoogleApi",
@@ -30,12 +30,6 @@
     "google",
     "api",
     "angular",
-    "2",
-    "4",
-    "5",
-    "ng2",
-    "ng4",
-    "ng5",
     "gapi",
     "ng-gapi"
   ],
@@ -51,16 +45,17 @@
     "tslib": "^1.11.1"
   },
   "devDependencies": {
+    "@angular/animations": "^9.1.0",
+    "@angular/common": "^9.1.0",
     "@angular/compiler": "^9.1.0",
     "@angular/compiler-cli": "^9.1.0",
     "@angular/core": "^9.1.0",
     "@angular/platform-server": "^9.1.0",
-    "@angular/animations": "^9.1.0",
-    "@angular/common": "^9.1.0",
     "@types/node": "^13.9.8",
+    "ng-packagr": "^10.1.0",
     "rxjs": "^6.5.4",
-    "typescript": "^3.8.3",
     "tslint": "~6.1.0",
+    "typescript": "~3.8.3",
     "zone.js": "^0.10.3"
   }
 }
