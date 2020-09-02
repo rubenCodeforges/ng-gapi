@@ -22,6 +22,12 @@
     "url": "git+https://github.com/rubenCodeforges/ng-gapi"
   },
   "keywords": [
+    "Angular2",
+    "Angular4",
+    "Angular5",
+    "Angular6",
+    "Angular7",
+    "Angular8",
     "Angular9",
     "Angular",
     "GoogleApi",
@@ -30,6 +36,12 @@
     "google",
     "api",
     "angular",
+    "2",
+    "4",
+    "5",
+    "ng2",
+    "ng4",
+    "ng5",
     "gapi",
     "ng-gapi"
   ],
