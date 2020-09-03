@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, Inject} from '@angular/core';
 import {GoogleApiService} from './GoogleApiService';
 import GoogleAuth = gapi.auth2.GoogleAuth;
 import {Observable, Observer, of} from 'rxjs';
@@ -8,7 +8,7 @@ import {mergeMap} from 'rxjs/operators';
 export class GoogleAuthService {
   private GoogleAuth: GoogleAuth = undefined;
 
-  constructor(private googleApi: GoogleApiService) {
+  constructor(@Inject(GoogleApiService) private googleApi: GoogleApiService) {
     this.googleApi.onLoad().subscribe(() => {
       this.loadGapiAuth().subscribe();
     });
