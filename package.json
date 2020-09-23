@@ -51,7 +51,7 @@
     "url": "https://github.com/rubenCodeforges/ng-gapi/issues"
   },
   "homepage": "https://github.com/rubenCodeforges/ng-gapi#readme",
-    "dependencies": {
+  "dependencies": {
     "@types/gapi": "^0.0.39",
     "@types/gapi.auth2": "^0.0.52",
     "tslib": "^2.0.1"
